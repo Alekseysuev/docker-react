@@ -6,4 +6,4 @@ before_install:
   - docker build -t alekseysuev/projects -f dockerfile.dev .
 
 script:
-  - docker run alekseysuev/projects npm install test -- --coverage
+  - docker run alekseysuev/projects npm run test -- --coverage
